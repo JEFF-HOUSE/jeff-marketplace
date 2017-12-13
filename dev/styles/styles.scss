@@ -1,0 +1,345 @@
+@import 'partials/_setup.scss';
+@import 'partials/_typography.scss';
+
+header{
+	.shoppingCart{
+		display: flex;
+		justify-content: flex-end;
+	}
+	.shopping{
+		background: $companyRed;
+		padding: 8px 14px;
+		i{
+			color: #fff;
+		}
+	}
+	.shoppingItems{
+		background: $companyGrey;
+		padding: 8px 14px;
+		p{
+			color: #fff;
+			margin: 0;
+			font-size: 15px;
+		}
+	}
+	.login{
+		padding: 10px 0 0 10px;
+		i{
+			color: $companyGrey;
+			font-size: 20px;
+		}
+	}
+	.loginSign{
+		padding: 10px 12px;
+		background: #E4E4E4;
+		i{
+
+		font-size: 20px;
+		}
+	}
+	nav{
+		display: flex;
+		align-items: center;
+		margin-bottom: 80px;
+		img{
+			padding-right: 50px;
+		}
+		p{
+			margin: 0;
+			max-width: 58%;
+			font-size: 13px;
+		}
+		p:first-child{
+			text-transform: uppercase;
+			color: $companyRed;
+			padding-right: 15px;
+			margin-left: 20px;
+		}
+		ul{
+			display: flex;
+			align-items: center;
+			text-transform: uppercase;
+			padding: 0;
+			span{
+				font-family: EurostileHeavy;
+				font-size: 20px;
+			}
+			li{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+				color: $companyGrey;
+				font-family: EurostileBold;
+				font-size: 15px;
+			}
+			.fav{
+				&::before{
+					font-family: $fontawesome;
+					content: "\f005";
+					color: $companyRed;
+					font-size: 10px;
+					padding: 0 15px;
+				}
+			}
+			.shop{
+				&::before{
+					font-family: $fontawesome;
+					content: "\f07a";
+					color: $companyRed;
+					font-size: 10px;
+					padding: 0 15px;
+				}
+			}
+			.login{
+				&::before{
+					font-family: $fontawesome;
+					content: "\f023";
+					color: $companyGrey;
+					font-size: 10px;
+					padding: 0 15px;
+				}
+			}
+		}
+	}
+}
+
+// ********************************************************** header carousel
+.headerCarousel{
+	margin-left: 20px;
+	img{
+		width: 100%;
+		padding: 5px;
+    }
+}
+
+       .next{
+            color: white;
+            position: absolute;
+            top: 45%;
+            right: 20px;
+            font-size: 1.5em;
+        }
+
+        .glyphicon-chevron-right{
+            color: white;
+            background: red;
+            padding: 7px;
+        }
+
+
+
+
+// Main Section************************************************
+
+.mainFlex{
+	display: flex;
+	margin-top: 60px;
+	form{
+		margin-left: 20px;
+		label{
+			display: block;
+			padding-bottom: 10px;
+			text-transform: capitalize;
+		}
+		input{
+			margin-right: 25px;
+		}
+	}
+	h4{
+		margin: 0;
+		text-transform: uppercase;
+		font-family: EurostileHeavy;
+		font-size: 20px;
+	}
+	aside{
+		width: 30%;
+		h4{
+			color: #fff;
+			background: $companyGrey;
+			padding: 10px 0 10px 20px;
+			&::after{
+				font-family: $fontawesome;
+				content: "\f077";
+				padding-left: 120px;
+			}
+		}
+		h5{
+			font-family: EurostileHeavy;
+			font-size: 20px;
+			color: $companyLightGrey;
+			text-transform: uppercase;
+			margin: 0;
+			margin-left: 20px;
+		}
+		.sort{
+			margin-top: 40px;
+			margin-bottom: 30px;
+			background: $companyFill;
+			&::after{
+				font-family: $fontawesome;
+				content: "\f078";
+				padding-left: 100px;
+			}
+		}
+		.general, .size, .mechanism{
+			display: inline-block;
+			margin-left: 20px;
+			margin-bottom: 30px;
+			padding: 3px 5px;
+			background: $companyGrey;
+			color: #fff;
+			font-family: EurostileBold;
+		}
+		.size{
+			margin-top: 20px;
+		}
+		ul{
+			list-style-type: none;
+			padding: 20px 0 0 20px;
+			.favSpecial{
+				&::before{
+					font-family: $fontawesome;
+					content: "\f005";
+					padding-right: 30px;
+				}
+			}
+			li{
+				padding-bottom: 10px;
+				border-bottom: 1px solid $companyFill;
+			}
+			a{
+				text-decoration: none;
+				color: $companyGrey;
+				font-family: EurostileBold;
+				font-size: 20px;
+				&::before{
+					font-family: $fontawesome;
+					content: "\f067";
+					font-size: 8px;
+					padding-right: 30px;
+				}
+			}
+		}
+	}
+
+	main{
+		width: 70%;
+		.promotionalCarousel{
+			img{
+				width: 100%;
+				padding: 5px;
+
+			}
+			div{
+				width: 1200px;
+			}
+		}
+		.promotionsTitleFlex{
+			display: flex;
+			background: $companyRed;
+			align-items: center;
+			h4{
+				color: #fff;
+				padding: 10px 0 11px 15px;
+			}
+			p{
+				margin: 0;
+				text-transform: uppercase;
+				color: #fff;
+				background: #000;
+				font-size: 9px;
+				padding: 1px 6px;
+				margin-left: 5px;
+			}
+		}
+		.allProducts{
+			h4{
+				background: $companyGrey;
+				color: #fff;
+				padding: 10px 0 10px 15px;
+			}
+		}
+	}
+}
+
+.favoriteProducts{
+	background: $companyRed;
+	font-family: EurostileHeavy;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	div{
+		padding-left: 50px;
+		width: 55%;
+	}
+	h5{
+		text-transform: uppercase;
+		margin: 0;
+		padding-top: 30px;
+		margin-bottom: 20px;
+		font-size: 20px;
+		&::after{
+				font-family: $fontawesome;
+				content: "\f005";
+			}
+	}
+
+	p{
+		margin: 0;
+		padding-bottom: 30px;
+		font-size: 14px;
+	}
+	form{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-right: 30px;
+		button{
+			display: block;
+			padding: 2px 150px;
+			border-radius: 0;
+		}
+		button:first-child{
+			color: $companyRed;
+			text-transform: uppercase;
+			font-family: EurostileHeavy;
+			font-size: 13px;
+			border: none;
+			margin-bottom: 10px;
+
+		}
+		button:last-child{
+			color: #fff;
+			background: $companyGrey;
+			text-transform: uppercase;
+			border: none;
+		}
+	}
+}
+
+
+.contactUs{
+	background: #F5F5F5;
+	display: flex;
+}
+
+.clients{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	div{
+		max-width: 70px;
+	}
+	img{
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+$companyRed: #ED1846;
+$companyGrey: #333;
+$companyLightGrey: #707070;
+$companyFill: #EDEDED;
+$fontawesome: 'FontAwesome';
+
+
+.wrapper{
+	// max-width: 1900px;
+	// margin: 0 auto;
+	// margin: 0 0 0 auto;
+}
+
+@font-face{
+	font-family: EurostileReg;
+	src: url(fonts/Eurostile-Reg.otf);
+}
+@font-face{
+	font-family: EurostileBold;
+	src: url(fonts/Eurostile-Bol.otf);
+}
+@font-face{
+	font-family: EurostileHeavy;
+	src: url(fonts/Eurostile-Hea.otf);
+}

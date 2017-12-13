@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+        <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.js"></script>
+    <style>
+
+        img {
+          width: 100%;
+            padding: 5px;
+        }
+
+
+
+        .next{
+            color: white;
+            position: absolute;
+            top: 38%;
+            right: 2em;
+            font-size: 1.5em;
+            :hover{
+                    cursor: pointer;
+                    color: black;
+                }
+        }
+
+        .glyphicon-chevron-right{
+            color: white;
+            background: red;
+        }
+
+       /* @media screen and (max-width: 800px) {
+            .next {
+                display: none !important;
+            }
+        }*/
+
+
+
+    </style>
+</head>
+<body>
+        <div class="row">
+            <div class="col-md-12 heroSlider-fixed">
+                <div class="overlay"></div>
+                <div class="slider responsive">
+                    <div><img src="http://placehold.it/200x150" alt="" /></div>
+                    <div><img src="http://placehold.it/200x150" alt="" /></div>
+                    <div><img src="http://placehold.it/200x150" alt="" /></div>
+                    <div><img src="http://placehold.it/200x150" alt="" /></div>
+                    <div><img src="http://placehold.it/200x150" alt="" /></div>
+                    <div><img src="http://placehold.it/200x150" alt="" /></div>
+                </div>
+                <div class="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
+            </div>
+        </div>
+
+
+      <script>
+          $('.responsive').slick({
+            dots: false,
+            prevArrow: $('.prev'),
+            nextArrow: $('.next'),
+            infinite: false,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 10,
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  infinite: true,
+                  dots: true
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+              // You can unslick at a given breakpoint now by adding:
+              // settings: "unslick"
+              // instead of a settings object
+            ]
+          });
+      </script>
+</body>
+</html>
